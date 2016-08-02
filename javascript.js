@@ -1,3 +1,23 @@
+//jQuery выпадающее меню
+
+$('#элемент').hover(function(){
+	//1 вариант
+	$(this).children('(подменю (ul))').stop(false, true).fadeIn(500);
+	//2 вариант
+	$(this).children('(подменю (ul))').stop(false, true).css({'opacity' : '0'});
+	
+	//new string
+	$(this).addClass('hover-active');
+},function(){
+	//1 вариант
+	$(this).children('(подменю (ul))').stop(false, true).fadeOut(500);
+	//2 вариант
+	$(this).children('(подменю (ul))').stop(false, true).css({'opacity' : '1'});
+	
+	//new string
+	$(this).removeClass('hover-active');
+});
+
 //Toggle Menu
 
 $('#id кнопки').click(function () {
