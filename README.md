@@ -1,2 +1,1 @@
-# nagge
-my-project
+Пару строк кода на JavaScript(jQuery) для будущего использования.
